@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>JavaScript Assignments</h1>
+<h2>Left Shift Assignment</h2>
+<h3>The <<= Operator</h3>
+
+<p id="demo"></p>
+
+<script>
+let x = -100;
+x <<= 5;
+document.getElementById("demo").innerHTML = "Value of x is: " + x;
+</script>
+
+<h2>Right Shift Assignment</h2>
+<h3>The >>= Operator</h3>
+
+<p id="demo1"></p>
+
+<script>
+let x1 = -100;
+x1 >>= 5;
+document.getElementById("demo1").innerHTML = "Value of x is: " + x1;
+</script>
+
+<h2>Right Shift Assignment</h2>
+<h3>The >>>= Operator</h3>
+
+<p id="demo2"></p>
+
+<script>
+let x2 = -100;
+x2 >>>= 5;
+document.getElementById("demo2").innerHTML = "Value of x is: " + x2;
+</script>
+
+<h2>Bitwise AND Assignment</h2>
+<h3>The &= Operator</h3>
+
+<p id="demo3"></p>
+
+<script>
+let x3 = 4;
+x3 &= 5;
+document.getElementById("demo3").innerHTML = "Value of x is: " + x3;
+</script>
+
+<h2>Bitwise OR Assignment</h2>
+<h3>The |= Operator</h3>
+
+<p id="demo4"></p>
+
+<script>
+let x4 = 4;
+x4 |= 5;
+document.getElementById("demo4").innerHTML = "Value of x is: " + x4;
+</script>
+
+<h3>The &&= Operator</h3>
+<p id="demo5"></p>
+
+<script>
+let x5 = 100;
+x5 &&= 5;
+document.getElementById("demo5").innerHTML = "Value of x is: " + x5;
+</script>
+
+<h3>The ||= Operator</h3>
+<p id="demo6"></p>
+
+<script>
+let x6 = undefined;
+x6 ||= 5;
+document.getElementById("demo6").innerHTML = "Value of x is: " + x6;
+</script>
+
+<h2>The ??= Operator</h2>
+<p id="demo7"></p>
+
+<script>
+let x7;
+document.getElementById("demo7").innerHTML = x7 ??= 5; 
+</script>
+    
+</body>
+</html>
