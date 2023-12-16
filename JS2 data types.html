@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 16 + 4 + "Volvo" + 16 + 4;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<br>
+
+<h2>JavaScript Data Types</h2>
+
+<p id="demo1"></p>
+
+<script>
+let y;        
+y = 5;         
+y = "John";    
+
+document.getElementById("demo1").innerHTML = y;
+</script>
+
+<br>
+
+<h2>JavaScript Strings</h2>
+
+<p id="demo2"></p>
+
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+
+document.getElementById("demo2").innerHTML =
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
+</script>
+
+<br>
+
+<h1>JavScript Bigint</h1>
+
+<p id="demo3"></p>
+
+<script>
+let x3 = BigInt(13343546342545768674542432);
+document.getElementById("demo3").innerHTML = x3; 
+</script>
+
+<br>
+
+<h2>JavaScript Booleans</h2>
+
+<p id="demo4"></p>
+
+<script>
+let x4 = 5;
+let y4 = 5;
+let z4 = 6;
+
+document.getElementById("demo4").innerHTML =
+(x4 == y4) + "<br>" + (x4 == z4);
+</script>
+
+<br>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo5"></p>
+
+<script>
+const person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo5").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+<br>
+
+<h2>JavaScript Operators</h2>
+
+<p id="demo6"></p>
+
+<script>
+    document.getElementById("demo6").innerHTML = typeof 4 + "<br>" + typeof "John" + "<br>" + typeof car;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>The slice() Method</h2>
+<p><b>"Apple, Banana, Kiwi";</b></p>
+<p id="demo"></p>
+
+
+<script>
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("demo").innerHTML = part; 
+</script>
+
+<br>
+
+<p id="demo1"></p>
+
+<script>
+let text1 = "Apple, Banana, Kiwi";
+let part1 = text1.slice(7)
+document.getElementById("demo1").innerHTML = part1;
+</script>
+
+<br>
+
+<p id="demo2"></p>
+
+<script>
+let text2 = "Apple, Banana, Kiwi";
+let part2 = text2.slice(-12);
+document.getElementById("demo2").innerHTML = part2;
+</script>
+
+<br>
+
+<p id="demo3"></p>
+
+<script>
+let text3 = "Apple, Banana, Kiwi";
+let part3 = text.slice(-12,-6)
+document.getElementById("demo3").innerHTML = part3;
+</script>
+
+<br>
+
+<p id="demo4"></p>
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo4").innerHTML = str.substring(7,13);
+</script>
+
+<br>
+
+<p id="demo5"></p>
+
+<script>
+let str1 = "Apple, Banana, Kiwi";
+document.getElementById("demo5").innerHTML = str1.substr(12,6);
+</script>
+
+<br>
+
+<h1>JavaScript String Methods</h1>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="a">Please visit Microsoft and Microsoft!</p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("a").innerHTML; 
+  document.getElementById("a").innerHTML =
+  x.replace("Microsoft","W3Schools");
+}
+</script>
+
+<br>
+
+
+
+
+</body>
+</html>

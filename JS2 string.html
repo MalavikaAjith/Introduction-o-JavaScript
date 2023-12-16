@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>The length Property</h2>
+<p id="demo"></p>
+
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = "Hello \
+Dolly!";
+</script>
+
+<h1>JavaScript Strings</h1>
+
+<p id="demo2"></p>
+
+<script>
+let x = "John";
+let y = new String("John");
+
+document.getElementById("demo2").innerHTML =
+typeof x + "<br>" + typeof y;
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+<p id="demo3"></p>
+<script>
+let x1 = "John";
+let y1 = new String("John");
+document.getElementById("demo3").innerHTML = (x1==y1);
+</script>
+
+<h2>Never Create Strings as Objects</h2>
+
+<p id="demo4"></p>
+
+<script>
+let x2 = "John";      
+let y2 = new String("John"); 
+document.getElementById("demo4").innerHTML = (x2===y2); // equal value and equal type
+</script>
+</body>
+</html>
