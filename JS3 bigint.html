@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>BigInt Divide</h2>
+<p id="demo"></p>
+    
+<script>
+let x = 5n;
+let y = Number(x) / 2;
+    
+document.getElementById("demo").innerHTML = y; 
+</script>
+
+<h2>Hex, Octal and Binary</h2>
+<p id="demo1"></p>
+
+<script>
+let hex = 0x20000000000003n;
+let oct = 0o400000000000000003n;
+let bin = 0b100000000000000000000000000000000000000000000000000011n;
+document.getElementById("demo1").innerHTML = hex + "<br>" + oct + "<br>" + bin; 
+</script>
+
+<h2>Integer Precision</h2>
+<p>Is 9007199254740992 equal to 9007199254740993?</p>
+<p id="demo2"></p>
+
+<script>
+let x1 = 9007199254740992 == 9007199254740993;
+document.getElementById("demo2").innerHTML = x1;
+</script>
+
+<h2>Number Object Properties</h2>
+<p>MAX_SAFE_INTEGER</p>
+<p id="demo3"></p>
+
+<script>
+let  x2 = Number.MAX_SAFE_INTEGER;
+document.getElementById("demo3").innerHTML = x2;
+</script>
+
+<h2>Number Object Properties</h2>
+<p>MIN_SAFE_INTEGER</p>
+<p id="demo4"></p>
+
+<script>
+let  x3 = Number.MIN_SAFE_INTEGER;
+document.getElementById("demo4").innerHTML = x3;
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>The indexOf() Method</h2>
+<p id="demo"></p>
+<script>
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+document.getElementById("demo").innerHTML = index; 
+</script>
+
+<h2>The lastIndexOf() Method</h2>
+<p id="demo1"></p>
+
+<script>
+let text1 = "Please locate where 'locate' occurs!";
+let index1 = text1.lastIndexOf("locate");
+document.getElementById("demo1").innerHTML = index1;
+</script>
+
+<h2>The indexOf() Method</h2>
+<p id="demo2"></p>
+
+<script>
+let text2 = "Please locate where 'locate' occurs!";
+let index2 = text2.indexOf("locate",15);
+document.getElementById("demo2").innerHTML = index2; 
+</script>
+
+<h2>The lastindexOf() Method</h2>
+<p id="demo3"></p>
+
+<script>
+let text3 = "Please locate where 'locate' occurs!";
+let index3 = text3.lastIndexOf("locate",15);
+document.getElementById("demo3").innerHTML = index3; 
+</script>
+
+<h2>The search() Method</h2>
+<p id="demo4"></p>
+
+<script>
+let text4 = "Please locate where 'locate' occurs!";
+let index4 = text.search("locate");
+document.getElementById("demo4").innerHTML = index4; 
+</script>
+
+<h2>The match() Method</h2>
+<p id="demo5"></p>
+
+<script>
+let text5 = "The rain in SPAIN stays mainly in the plain";
+const myArr = text5.match("ain");
+document.getElementById("demo5").innerHTML = myArr.length + " " + myArr;
+</script>
+
+<h2>The match() Method</h2>
+<p id="demo6"></p>
+
+<script>
+let text6 = "The rain in SPAIN stays mainly in the plain";
+const myArr1 = text6.match(/ain/ig);
+document.getElementById("demo6").innerHTML = myArr1.length + " " + myArr1;
+</script>
+
+<h2>The includes() Method</h2>
+<p id="demo7"></p>
+
+<script>
+let text7 = "Hello world, welcome to the universe.";
+document.getElementById("demo7").innerHTML = text7.includes("world");
+</script>
+
+<h2>The includes() Method</h2>
+<p id="demo8"></p>
+
+<script>
+let text8 = "Hello world, welcome to the universe.";
+document.getElementById("demo8").innerHTML = text8.includes("world", 12);
+</script>
+
+<h2>The startsWith() Method</h2>
+<p id="demo9"></p>
+
+<script>
+let text9 = "Hello world, welcome to the universe.";
+document.getElementById("demo9").innerHTML = text9.startsWith("Hello");
+</script>
+
+<h2>The startsWith() Method</h2>
+<p id="demo10"></p>
+
+<script>
+let text10 = "Hello world, welcome to the universe.";
+document.getElementById("demo10").innerHTML = text10.startsWith("world");
+</script>
+
+<h2>The startsWith() Method</h2>
+<p id="demo11"></p>
+
+<script>
+let text11 = "Hello world, welcome to the universe.";
+document.getElementById("demo11").innerHTML = text11.startsWith("world",6);
+</script>
+
+<h2>JavaScript Strings</h2>
+<p id="demo12"></p>
+
+<script>
+let text12 = "John Doe";
+document.getElementById("demo12").innerHTML = text12.endsWith("Doe");
+</script>
+
+<h2>JavaScript Strings</h2>
+<p id="demo13"></p>
+
+<script>
+let text13 = "Hello world, welcome to the universe.";
+document.getElementById("demo13").innerHTML = text13.endsWith("world", 11);
+</script>
+
+
+    
+</body>
+</html>
