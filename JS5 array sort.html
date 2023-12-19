@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>The sort() and reverse() Method</h2>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+
+fruits.reverse();
+document.getElementById("demo3").innerHTML = fruits;
+</script>
+
+<h2>The sort() Method</h2>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo4").innerHTML = points;  
+
+points.sort(function(a, b){return a - b});
+document.getElementById("demo5").innerHTML = points;
+
+points.sort(function(a, b){return b - a});
+document.getElementById("demo6").innerHTML = points;
+</script>
+
+<h2>JavaScript Array Sort</h2>
+<p id="demo7"></p>
+<script>
+const points1 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo7").innerHTML = myArrayMax(points1);
+    
+function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+}
+</script>
+
+<h2>JavaScript Array Sort</h2>
+<p id="demo8"></p>
+<script>
+const points2 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo8").innerHTML = myArrayMax(points2);
+    
+function myArrayMax(arr) {
+    return Math.min.apply(null, arr);
+}
+</script>
+
+<h2>The sort() Method</h2>
+<p id="demo9"></p>
+
+<script>
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+cars.sort(function(a, b){return a.year - b.year});
+displayCars();
+
+function displayCars() {
+  document.getElementById("demo9").innerHTML =
+  cars[0].type + " " + cars[0].year + "<br>" +
+  cars[1].type + " " + cars[1].year + "<br>" +
+  cars[2].type + " " + cars[2].year;
+}
+</script>
+
+
+
+    
+</body>
+</html>
