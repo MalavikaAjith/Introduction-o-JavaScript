@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+    
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+<h2>Bracket Indexing</h2>
+
+<p id="demo1"></p>
+
+<script>
+const cars1 = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
+document.getElementById("demo1").innerHTML = cars1;
+</script>
+
+<h2>JavaScript Objects</h2>
+<p id="demo2"></p>
+
+<script>
+const person = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo2").innerHTML = person.firstName;
+</script>
+
+<h2>JavaScript Arrays</h2>
+<p id="demo3"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits.length;
+</script>
+
+<h2>Bracket Indexing</h2>
+<p id="demo4"></p>
+
+<script>
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo4").innerHTML = fruits1[fruits1.length-2];
+</script>
+
+<h2>Looping an Array</h2>
+<p id="demo5"></p>
+
+<script>
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits2.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits2[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo5").innerHTML = text;
+</script>
+
+<h2>The push() Method</h2>
+<p id="demo6"></p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+const fruits3 = ["Banana", "Orange", "Apple"];
+document.getElementById("demo6").innerHTML = fruits3;
+function myFunction() {
+  fruits3.push("Lemon");
+  document.getElementById("demo6").innerHTML = fruits3;
+}
+</script>
+
+<h2>The isArray() Method</h2>
+
+<p id="demo7"></p>
+
+<script>
+const fruits4 = ["Banana", "Orange", "Apple"];
+document.getElementById("demo7").innerHTML = Array.isArray(fruits4);
+</script>
+    
+</body>
+</html>

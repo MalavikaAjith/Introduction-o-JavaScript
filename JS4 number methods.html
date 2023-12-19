@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript Number Methods</h2>
+<p id="demo"></p>
+    
+<script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+x.toString() + "<br>" +
+(123).toString() + "<br>" +
+(100 + 23).toString();
+</script>
+
+<h2>JavaScript Number Methods</h2>
+<p id="demo1"></p>
+
+<script>
+let x1 = 9.656;
+document.getElementById("demo1").innerHTML =
+x1.toExponential() + "<br>" + 
+x1.toExponential(2) + "<br>" + 
+x1.toExponential(4) + "<br>" + 
+x1.toExponential(6);
+</script>
+
+<h2>JavaScript Number Methods</h2>
+<p id="demo2"></p>
+
+<script>
+let x2 = 9.656;
+document.getElementById("demo2").innerHTML =
+  x2.toFixed(0) + "<br>" +
+  x2.toFixed(2) + "<br>" +
+  x2.toFixed(4) + "<br>" +
+  x2.toFixed(6);
+</script>
+
+<h2>JavaScript Number Methods</h2>
+<p id="demo3"></p>
+
+<script>
+let x3 = 9.656;
+document.getElementById("demo3").innerHTML = 
+  x3.toPrecision() + "<br>" +
+  x3.toPrecision(2) + "<br>" +
+  x3.toPrecision(4) + "<br>" +
+  x3.toPrecision(6);  
+</script>
+
+<h2>JavaScript Global Methods</h2>
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML = 
+  Number(true) + "<br>" +
+  Number(false) + "<br>" +
+  Number("10") + "<br>" + 
+  Number("  10") + "<br>" +
+  Number("10  ") + "<br>" +
+  Number(" 10  ") + "<br>" +
+  Number("10.33") + "<br>" + 
+  Number("10,33") + "<br>" +
+  Number("10 33") + "<br>" +
+  Number("John");
+</script>
+
+<h2>parseInt()</h2>
+
+<p id="demo5"></p>
+
+<script>
+document.getElementById("demo5").innerHTML = 
+  parseInt("-10") + "<br>" +
+  parseInt("-10.33") + "<br>" +
+  parseInt("10") + "<br>" +
+  parseInt("10.33") + "<br>" +
+  parseInt("10 6") + "<br>" +  
+  parseInt("10years") + "<br>" +  
+  parseInt("years 10");  
+</script>
+
+<h2>parseFloat()</h2>
+
+<p id="demo6"></p>
+
+<script>
+document.getElementById("demo6").innerHTML = 
+  parseFloat("10") + "<br>" +
+  parseFloat("10.33") + "<br>" +
+  parseFloat("10 6") + "<br>" +  
+ Number.parseFloat("10 years") + "<br>" +
+  parseFloat("years 10");    
+</script>
+
+
+
+
+
+    
+</body>
+</html>
