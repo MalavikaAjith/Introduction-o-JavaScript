@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>JavaScript Booleans</h1>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Boolean(10 > 9);
+</script>
+
+<h1>JavaScript Booleans</h1>
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"Even the string 'false' is " + Boolean('false') + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+</script>
+
+<h1>JavaScript Booleans</h1>
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo2").innerHTML =
+"0 is " + Boolean(0) + "<br>" +
+"-0 is " + Boolean(-0) + "<br>" +
+"'' is " + Boolean('') + "<br>" +
+"null is " + Boolean(null) + "<br>" +
+"false is " + Boolean(false) + "<br>" +
+"10/'hello' is " + Boolean(10/'hello');
+</script>
+
+<h1>JavaScript Booleans</h1>
+<p id="demo3"></p>
+
+<script>
+let x = false;
+let y = new Boolean(false);
+document.getElementById("demo3").innerHTML = typeof x + "<br>" + typeof y;
+</script>
+
+<h1>JavaScript Booleans</h1>
+<p id="demo4"></p>
+
+<script>
+let x1 = false;         // x is a boolean
+let y1 = new Boolean(false);  // y is an object
+document.getElementById("demo4").innerHTML = (x1==y1);
+</script>
+
+<h1>JavaScript Booleans</h1>
+<p id="demo5"></p>
+
+<script>
+let x2 = false;         // x is a Boolean
+let y2 = new Boolean(false);  // y is an object
+document.getElementById("demo5").innerHTML = (x2===y2);
+</script>
+
+<h1>JavaScript Booleans</h1>
+<p id="demo6"></p>
+
+<script>
+const x3 = new Boolean(false);
+const y3 = new Boolean(false);
+document.getElementById("demo6").innerHTML = (x3==y3);
+</script>
+
+<h1>JavaScript Booleans</h1>
+<p id="demo7"></p>
+
+<script>
+const x4 = new Boolean(false);
+const y4 = new Boolean(false);
+document.getElementById("demo7").innerHTML = (x4===y4);
+</script>
+    
+</body>
+</html>
