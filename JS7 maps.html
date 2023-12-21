@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript Objects</h2>
+<p id="demo"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+ fruits.delete("bananas");
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+document.getElementById("demo3").innerHTML = fruits.size;
+document.getElementById("demo4").innerHTML = fruits.has("apples");
+document.getElementById("demo5").innerHTML = fruits.has("bananas");
+
+</script>
+
+<h2>JavaScript Map Objects</h2>
+<p id="demo1"></p>
+
+<script>
+const fruits1 = new Map();
+
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+document.getElementById("demo1").innerHTML = fruits.get("apples");
+</script>
+
+<h2>JavaScript Map Objects</h2>
+<p id="demo2"></p>
+
+<script>
+const fruits2 = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+fruits2.set("apples", 200);
+
+document.getElementById("demo2").innerHTML = fruits2.get("apples");
+</script>
+</body>
+</html>
