@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>The typeof Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"'John' is " + typeof "John" + "<br>" +
+"3.14 is " + typeof 3.14 + "<br>" +
+"NaN is " + typeof NaN + "<br>" +
+"false is " + typeof false + "<br>" +
+"[1, 2, 3, 4] is " + typeof [1, 2, 3, 4] + "<br>" +
+"{name:'John', age:34} is " + typeof {name:'John', age:34} + "<br>" +
+"new Date() is " + typeof new Date() + "<br>" +
+"function () {} is " + typeof function () {} + "<br>" +
+"myCar is " + typeof myCar + "<br>" +
+"null is " + typeof null;
+</script>
+
+<h2>The constructor Property</h2>
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = 
+  "john".constructor + "<br>" +
+  (3.14).constructor + "<br>" +
+  false.constructor + "<br>" +
+  [1,2,3,4].constructor + "<br>" +
+  {name:'john', age:34}.constructor + "<br>" +
+  new Date().constructor + "<br>" +
+  function () {}.constructor;
+</script>
+
+<h2>JavaScript Array Object</h2>
+<p id="demo2"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo2").innerHTML = isArray(fruits);
+
+function isArray(fruits) {
+    return fruits.constructor === Array;
+}
+</script>
+
+<h2>JavaScript Date Object</h2>
+<p id="demo3"></p>
+
+<script>
+const myDate = new Date();
+document.getElementById("demo3").innerHTML = isDate(myDate);
+
+function isDate(myDate) {
+  return myDate.constructor === Date;
+}
+</script>
+
+<h2>The typeof Operator</h2>
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo4").innerHTML =
+(null === undefined) + "<br>" +
+(null == undefined);
+</script>
+
+<h2>The instanceof Operator</h2>
+<p id="demo5"></p>
+
+<script> 
+const cars = ["Saab", "Volvo", "BMW"];
+
+document.getElementById("demo5").innerHTML =
+(cars instanceof Array) + "<br>" + 
+(cars instanceof Object) + "<br>" +
+(cars instanceof String) + "<br>" +
+(cars instanceof Number);
+</script>
+
+<h2>The void Operator</h2>
+
+<p>
+<a href="javascript:void(0);">Useless link</a>
+</p>
+
+<p>
+<a href="javascript:void(document.body.style.backgroundColor='red');">
+Click me to change the background color of body to red.</a>
+</p>
+    
+</body>
+</html>
